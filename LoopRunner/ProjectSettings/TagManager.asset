@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Door
+  - Gas
+  - Heavy
+  - Buoyant
+  - Key
+  - Fan
+  - Grate
   layers:
   - Default
   - TransparentFX

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(BoxCollider2D))]
+
 public class PlayerLoop : MonoBehaviour {
 
     private float playerWidth;
@@ -13,16 +13,16 @@ public class PlayerLoop : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	    
-        if( transform.position.x > Camera.main.orthographicSize * Camera.main.aspect + playerWidth/2f ) {
+        if( transform.position.x > Camera.main.transform.position.x + Camera.main.orthographicSize * Camera.main.aspect + playerWidth/2 ) {
             Vector3 newPosition = transform.position;
 
-            newPosition.x = -Camera.main.orthographicSize * Camera.main.aspect;
+            newPosition.x = Camera.main.transform.position.x - Camera.main.orthographicSize * Camera.main.aspect - playerWidth/4;
 
             transform.position = newPosition;
-        } else if( transform.position.x < -Camera.main.orthographicSize * Camera.main.aspect - playerWidth/2f ) {
+        } else if( transform.position.x < Camera.main.transform.position.x - Camera.main.orthographicSize * Camera.main.aspect - playerWidth/2 ) {
             Vector3 newPosition = transform.position;
 
-            newPosition.x = Camera.main.orthographicSize * Camera.main.aspect;
+            newPosition.x = Camera.main.transform.position.x + Camera.main.orthographicSize * Camera.main.aspect + playerWidth/4;
 
             transform.position = newPosition;
         }
