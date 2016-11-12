@@ -52,7 +52,16 @@ public class PlayerController : MonoBehaviour {
             else other.gameObject.SetActive(false);
         }
 
-        if(other.gameObject.CompareTag("Gas"))
+        if (other.gameObject.CompareTag("Grate"))
+        {
+            if ( currentStatus != playerStatus.GAS)
+            {
+                //this kills the player
+                SceneManager.LoadScene(nextScene);
+            }
+        }
+
+        if (other.gameObject.CompareTag("Gas"))
         {
             currentStatus = playerStatus.GAS;
             sr.color = new Color( 0f, 1f, 0f, 0.5f );

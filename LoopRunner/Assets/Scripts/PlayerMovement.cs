@@ -50,10 +50,10 @@ public class PlayerMovement : MonoBehaviour
         // Jump if player is on the ground
         if( _grounded )
         {
-            if(GetComponent<PlayerController>().getCurrentStatus()!=PlayerController.playerStatus.HEAVY)
+            //if(GetComponent<PlayerController>().getCurrentStatus()!=PlayerController.playerStatus.HEAVY)
                 rb2D.AddForce( new Vector2( 0f, jumpStrength ) );
-            else
-                rb2D.AddForce(new Vector2(0f, jumpStrength/1.25f));
+            //else
+            //    rb2D.AddForce(new Vector2(0f, jumpStrength/1.25f));
         }
     }
 
