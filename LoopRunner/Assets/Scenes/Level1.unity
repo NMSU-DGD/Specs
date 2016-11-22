@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37356418, g: 0.38112003, b: 0.35887662, a: 1}
+  m_IndirectSpecularColor: {r: 0.37356448, g: 0.3811204, b: 0.35887685, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -330,6 +330,8 @@ MonoBehaviour:
   door_Prefab: {fileID: 1000011037375398, guid: 86ae9fa6deea80e4ca88b88ce4706f09,
     type: 2}
   fan_Prefab: {fileID: 1000013444412530, guid: c5118dd9f3fb0b145a0774aa2503f7e0, type: 2}
+  grate_Prefab: {fileID: 1000011966378456, guid: 276bd6477030a8d40893873f0b4f3e6f,
+    type: 2}
   key_Prefab: {fileID: 1000013018236912, guid: f2802102c306d4348b6a3463562983b9, type: 2}
   gas_Prefab: {fileID: 1000010258685496, guid: 7072c66225352cf4993fa39340405bf3, type: 2}
   heavy_Prefab: {fileID: 1000013247360982, guid: d15b38b756335634393f2392726096ce,

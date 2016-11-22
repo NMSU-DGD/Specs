@@ -16,6 +16,7 @@ public class LevelLoader : MonoBehaviour {
 
     public GameObject door_Prefab;
     public GameObject fan_Prefab;
+    public GameObject grate_Prefab;
 
     public GameObject key_Prefab;
     public GameObject gas_Prefab;
@@ -64,6 +65,10 @@ public class LevelLoader : MonoBehaviour {
             {
                 Spawn( fan_Prefab, x, y, specialObjects );
             }
+            else if (pixel.Equals(new Color(1f, 0f, 2/255f)))
+            {
+                Spawn(grate_Prefab, x, y, specialObjects);
+            }
             else if( pixel.Equals( new Color( 1f, 1f, 0f ) ) )
             {
                 Spawn( key_Prefab, x, y, pickupObjects );
@@ -92,6 +97,6 @@ public class LevelLoader : MonoBehaviour {
 
     private void Spawn( GameObject obj, float x, float y, Transform container )
     {
-                    Instantiate( obj, new Vector2( x, y ), Quaternion.Euler( Vector3.zero ), container );
+        Instantiate( obj, new Vector2( x, y ), Quaternion.Euler( Vector3.zero ), container );
     }
 }
