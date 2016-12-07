@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     private PlayerMovement playerMovement;
     private bool hasKey = false;
+    public string thisScene;
     public string nextScene;
 
     public enum playerStatus { HEAVY,GAS,BUOYANT };
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour {
             if(!hasKey)
             {
                 //this kills the player
-                SceneManager.LoadScene(nextScene);
+                SceneManager.LoadScene(thisScene);
             }
             //otherwise kill the door
             else other.gameObject.SetActive(false);
@@ -57,7 +58,16 @@ public class PlayerController : MonoBehaviour {
             if ( currentStatus != playerStatus.GAS)
             {
                 //this kills the player
-                SceneManager.LoadScene(nextScene);
+                SceneManager.LoadScene(thisScene);
+            }
+        }
+
+        if (other.gameObject.CompareTag("Water"))
+        {
+            if (currentStatus == playerStatus.GAS)
+            {
+                //this kills the player
+                SceneManager.LoadScene(thisScene);
             }
         }
 
@@ -72,6 +82,18 @@ public class PlayerController : MonoBehaviour {
             currentStatus = playerStatus.HEAVY;
             sr.color = new Color( 0.8f, 0.8f, 0.5f, 1.0f );
 
+        }
+
+        if(other.gameObject.CompareTag("Buoyant"))
+        {
+            currentStatus = playerStatus.BUOYANT;
+            sr.color = new Color(0.6f, 0.6f, 1f, 1f);
+        }
+
+
+        if (other.gameObject.CompareTag("Goal"))
+        {
+            SceneManager.LoadScene(nextScene);
         }
 
     }
