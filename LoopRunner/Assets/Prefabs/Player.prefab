@@ -192,7 +192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 212000014101670862}
-  nextScene: Level2
+  thisScene: Level2
+  nextScene: Level1
   currentStatus: 0
 --- !u!212 &212000014101670862
 SpriteRenderer:

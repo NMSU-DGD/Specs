@@ -12,6 +12,7 @@ TagManager:
   - Fan
   - Grate
   - Water
+  - Goal
   layers:
   - Default
   - TransparentFX

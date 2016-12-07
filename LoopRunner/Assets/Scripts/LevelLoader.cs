@@ -10,6 +10,7 @@ public class LevelLoader : MonoBehaviour {
     public Transform pickupObjects;
 
     public GameObject player_Prefab;
+    public GameObject goal_Prefab;
 
     public GameObject cardboard_Ground_0_Prefab;
     public GameObject cardboard_Ground_1_Prefab;
@@ -35,6 +36,7 @@ public class LevelLoader : MonoBehaviour {
     [Header("Object Colors: ")]
     // Player
     public Color player = new Color(0f, 1f, 0f);
+    public Color goal = new Color(0f, 127 / 255f, 0f);
 
     // Environment
     public Color ground = new Color( 0f, 0f, 0f );
@@ -54,6 +56,7 @@ public class LevelLoader : MonoBehaviour {
     public Color waterGrate = new Color(253/255f, 0f, 127 / 255f);
 
     public Color waterPlayer = new Color( 0f, 1f, 127 / 255f );
+    public Color waterGoal = new Color(0f, 127 / 255f, 127 / 255f);
 
     // Pickups
     public Color key = new Color(1f, 255/255f, 0f);
@@ -115,6 +118,17 @@ public class LevelLoader : MonoBehaviour {
             else if (pixel.Equals( waterPlayer ))
             {
                 Spawn(player_Prefab, x, y + 0.25f, characterObjects);
+                Spawn(water_Prefab, x, y, groundObjects);
+            }
+
+
+            else if (pixel.Equals(goal))
+            {
+                Spawn(goal_Prefab, x, y, specialObjects);
+            }
+            else if (pixel.Equals(waterGoal))
+            {
+                Spawn(goal_Prefab, x, y, specialObjects);
                 Spawn(water_Prefab, x, y, groundObjects);
             }
 

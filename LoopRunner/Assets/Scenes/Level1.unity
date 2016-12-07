@@ -323,9 +323,15 @@ MonoBehaviour:
   pickupObjects: {fileID: 271285874}
   player_Prefab: {fileID: 1000010757005752, guid: 4ff7368da5f6288479a076ef0fe24ab7,
     type: 2}
+  goal_Prefab: {fileID: 1000013799374988, guid: 6116e93a41f38d64a9552c08487a9540,
+    type: 2}
   cardboard_Ground_0_Prefab: {fileID: 1000011457762868, guid: 1ed9c0462ca169b4f9c808b5f3ffe080,
     type: 2}
   cardboard_Ground_1_Prefab: {fileID: 1000012490247664, guid: 54f87aecbd587eb48b3b367db0271df3,
+    type: 2}
+  background_Prefab: {fileID: 1000014136112650, guid: 1d89ae31eb54fbd4b9c69de77490da56,
+    type: 2}
+  water_Prefab: {fileID: 1000013196761736, guid: c3496841cbd89fb438024d87ce159a50,
     type: 2}
   door_Prefab: {fileID: 1000011037375398, guid: 86ae9fa6deea80e4ca88b88ce4706f09,
     type: 2}
@@ -338,8 +344,29 @@ MonoBehaviour:
     type: 2}
   buoyancy_Prefab: {fileID: 1000012404844982, guid: 8caa392aad54ac3459f8dabcfcb66367,
     type: 2}
-  texMap: {fileID: 2800000, guid: 64eb718c48783ea4daa0ce4abf70715c, type: 3}
+  texMap: {fileID: 2800000, guid: 0ad6ad3da67aefa4e8607074ebe0e13a, type: 3}
   levelWidth: 29
+  player: {r: 0, g: 1, b: 0, a: 1}
+  goal: {r: 0, g: 0.49803922, b: 0, a: 1}
+  ground: {r: 0, g: 0, b: 0, a: 1}
+  backGround: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
+  water: {r: 0, g: 0, b: 0.49803922, a: 1}
+  waterKey: {r: 1, g: 1, b: 0.49803922, a: 1}
+  waterGas: {r: 1, g: 0.99607843, b: 0.49803922, a: 1}
+  waterHeavy: {r: 1, g: 0.99215686, b: 0.49803922, a: 1}
+  waterBuoyant: {r: 1, g: 0.9882353, b: 0.49803922, a: 1}
+  waterFan: {r: 1, g: 0, b: 0.49803922, a: 1}
+  waterDoor: {r: 0.99607843, g: 0, b: 0.49803922, a: 1}
+  waterGrate: {r: 0.99215686, g: 0, b: 0.49803922, a: 1}
+  waterPlayer: {r: 0, g: 1, b: 0.49803922, a: 1}
+  waterGoal: {r: 0, g: 0.49803922, b: 0.49803922, a: 1}
+  key: {r: 1, g: 1, b: 0, a: 1}
+  gas: {r: 1, g: 0.99607843, b: 0, a: 1}
+  heavy: {r: 1, g: 0.99215686, b: 0, a: 1}
+  buoyant: {r: 1, g: 0.9882353, b: 0, a: 1}
+  fan: {r: 1, g: 0, b: 0, a: 1}
+  door: {r: 0.99607843, g: 0, b: 0, a: 1}
+  grate: {r: 0.99215686, g: 0, b: 0, a: 1}
 --- !u!114 &1690213061
 MonoBehaviour:
   m_ObjectHideFlags: 0
