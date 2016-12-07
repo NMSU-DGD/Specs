@@ -179,7 +179,7 @@ MonoBehaviour:
   jumpStrength: 825
   velocityCap: 300
   fanAcceleration: 25
-  waterAcceleration: 20
+  waterAcceleration: 15
 --- !u!114 &114000013815168588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -192,8 +192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 212000014101670862}
-  thisScene: Level2
-  nextScene: Level1
   currentStatus: 0
 --- !u!212 &212000014101670862
 SpriteRenderer:

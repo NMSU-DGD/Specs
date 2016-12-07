@@ -10,14 +10,12 @@ public class PlayerController : MonoBehaviour {
 
     private PlayerMovement playerMovement;
     private bool hasKey = false;
-    public string thisScene;
-    public string nextScene;
 
-    public enum playerStatus { HEAVY,GAS,BUOYANT };
+    public enum PlayerStatus { HEAVY,GAS,BUOYANT };
 
-    public playerStatus currentStatus = playerStatus.HEAVY;
+    public PlayerStatus currentStatus = PlayerStatus.HEAVY;
 
-    public playerStatus getCurrentStatus() { return currentStatus; }
+    public PlayerStatus getCurrentStatus() { return currentStatus; }
 
     void Start()
     {
@@ -47,7 +45,7 @@ public class PlayerController : MonoBehaviour {
             if(!hasKey)
             {
                 //this kills the player
-                SceneManager.LoadScene(thisScene);
+                Die();
             }
             //otherwise kill the door
             else other.gameObject.SetActive(false);
@@ -55,48 +53,56 @@ public class PlayerController : MonoBehaviour {
 
         if (other.gameObject.CompareTag("Grate"))
         {
-            if ( currentStatus != playerStatus.GAS)
+            if ( currentStatus != PlayerStatus.GAS)
             {
                 //this kills the player
-                SceneManager.LoadScene(thisScene);
+                Die();
             }
         }
 
         if (other.gameObject.CompareTag("Water"))
         {
-            if (currentStatus == playerStatus.GAS)
+            if (currentStatus == PlayerStatus.GAS)
             {
                 //this kills the player
-                SceneManager.LoadScene(thisScene);
+                Die();
             }
         }
 
         if (other.gameObject.CompareTag("Gas"))
         {
-            currentStatus = playerStatus.GAS;
+            currentStatus = PlayerStatus.GAS;
             sr.color = new Color( 0f, 1f, 0f, 0.5f );
         }
 
         if (other.gameObject.CompareTag("Heavy"))
         {
-            currentStatus = playerStatus.HEAVY;
+            currentStatus = PlayerStatus.HEAVY;
             sr.color = new Color( 0.8f, 0.8f, 0.5f, 1.0f );
 
         }
 
         if(other.gameObject.CompareTag("Buoyant"))
         {
-            currentStatus = playerStatus.BUOYANT;
+            currentStatus = PlayerStatus.BUOYANT;
             sr.color = new Color(0.6f, 0.6f, 1f, 1f);
         }
 
 
         if (other.gameObject.CompareTag("Goal"))
         {
-            SceneManager.LoadScene(nextScene);
+            Win();
         }
 
     }
 
-    
+    private void Win()
+    {
+        GameManager.instance.NextLevel();
+    }
+
+    private void Die()
+    {
+        GameManager.instance.RestartLevel();
+    }
 }

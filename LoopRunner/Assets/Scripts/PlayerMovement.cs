@@ -62,12 +62,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Fan"))
         {
-            if(GetComponent<PlayerController>().getCurrentStatus()==PlayerController.playerStatus.GAS)
+            if(GetComponent<PlayerController>().getCurrentStatus()==PlayerController.PlayerStatus.GAS)
                 if(rb2D.velocity.y<=velocityCap)rb2D.AddForce(new Vector2(0f, fanAcceleration));
         }
         if (other.gameObject.CompareTag("Water"))
         {
-            if (GetComponent<PlayerController>().getCurrentStatus() == PlayerController.playerStatus.BUOYANT)
+            if (GetComponent<PlayerController>().getCurrentStatus() == PlayerController.PlayerStatus.BUOYANT)
                 if (rb2D.velocity.y <= velocityCap) rb2D.AddForce(new Vector2(0f, waterAcceleration));
         }
     }

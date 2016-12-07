@@ -29,8 +29,6 @@ public class LevelLoader : MonoBehaviour {
     public GameObject heavy_Prefab;
     public GameObject buoyancy_Prefab;
 
-    public Texture2D texMap;
-
     public int levelWidth;
 
     [Header("Object Colors: ")]
@@ -79,7 +77,7 @@ public class LevelLoader : MonoBehaviour {
 	
 	}
 
-    public void LoadLevel( string texMapName )
+    public void LoadLevel( Texture2D texMap )
     {
         Color[] pixMap = texMap.GetPixels();
 

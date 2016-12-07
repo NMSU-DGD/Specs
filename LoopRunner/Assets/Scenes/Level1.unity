@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37356448, g: 0.3811204, b: 0.35887685, a: 1}
+  m_IndirectSpecularColor: {r: 0.37356418, g: 0.38112003, b: 0.35887662, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -344,7 +344,6 @@ MonoBehaviour:
     type: 2}
   buoyancy_Prefab: {fileID: 1000012404844982, guid: 8caa392aad54ac3459f8dabcfcb66367,
     type: 2}
-  texMap: {fileID: 2800000, guid: 0ad6ad3da67aefa4e8607074ebe0e13a, type: 3}
   levelWidth: 29
   player: {r: 0, g: 1, b: 0, a: 1}
   goal: {r: 0, g: 0.49803922, b: 0, a: 1}
@@ -378,6 +377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f675964f063eeb42b3df6f8a644263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  texMapLevel: {fileID: 2800000, guid: 0ad6ad3da67aefa4e8607074ebe0e13a, type: 3}
+  currentLevel: Level1
+  nextLevel: Level2
 --- !u!4 &1690213062
 Transform:
   m_ObjectHideFlags: 0
