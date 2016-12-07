@@ -61,6 +61,15 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        if (other.gameObject.CompareTag("Water"))
+        {
+            if (currentStatus == playerStatus.GAS)
+            {
+                //this kills the player
+                SceneManager.LoadScene(nextScene);
+            }
+        }
+
         if (other.gameObject.CompareTag("Gas"))
         {
             currentStatus = playerStatus.GAS;
@@ -72,6 +81,12 @@ public class PlayerController : MonoBehaviour {
             currentStatus = playerStatus.HEAVY;
             sr.color = new Color( 0.8f, 0.8f, 0.5f, 1.0f );
 
+        }
+
+        if(other.gameObject.CompareTag("Buoyant"))
+        {
+            currentStatus = playerStatus.BUOYANT;
+            sr.color = new Color(0.6f, 0.6f, 1f, 1f);
         }
 
     }

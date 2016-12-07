@@ -13,7 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpStrength; // Player's jump strength
 
     public float velocityCap;
-    public float fanVelocity;
+    public float fanAcceleration;
+    public float waterAcceleration;
 
     void Start()
     {
@@ -62,7 +63,12 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Fan"))
         {
             if(GetComponent<PlayerController>().getCurrentStatus()==PlayerController.playerStatus.GAS)
-                if(rb2D.velocity.y<=velocityCap)rb2D.AddForce(new Vector2(0f, fanVelocity));
+                if(rb2D.velocity.y<=velocityCap)rb2D.AddForce(new Vector2(0f, fanAcceleration));
+        }
+        if (other.gameObject.CompareTag("Water"))
+        {
+            if (GetComponent<PlayerController>().getCurrentStatus() == PlayerController.playerStatus.BUOYANT)
+                if (rb2D.velocity.y <= velocityCap) rb2D.AddForce(new Vector2(0f, waterAcceleration));
         }
     }
 }

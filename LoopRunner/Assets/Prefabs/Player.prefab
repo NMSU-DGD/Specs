@@ -178,7 +178,8 @@ MonoBehaviour:
   runSpeed: 5
   jumpStrength: 825
   velocityCap: 300
-  fanVelocity: 22
+  fanAcceleration: 25
+  waterAcceleration: 20
 --- !u!114 &114000013815168588
 MonoBehaviour:
   m_ObjectHideFlags: 1
