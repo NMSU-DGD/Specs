@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerController : MonoBehaviour {
-
     [SerializeField] private SpriteRenderer sr;
 
     private PlayerMovement playerMovement;
@@ -19,6 +18,8 @@ public class PlayerController : MonoBehaviour {
 
     void Start()
     {
+		AudioSource audio = GetComponent<AudioSource>();
+
         playerMovement = GetComponent<PlayerMovement>();
 
         sr.color = new Color( 0.8f, 0.8f, 0.5f, 1.0f );
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 	    // Check for jump input
         if( Input.GetButtonDown( "Jump" ) )
-        {
+		{
             playerMovement.Jump();
         }
 	}

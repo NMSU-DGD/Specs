@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011798400766}
   - 212: {fileID: 212000011865271142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013201755646}
   - 61: {fileID: 61000012567571298}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}

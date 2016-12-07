@@ -1,28 +1,70 @@
-Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1136 MB
+    Renderer: NVIDIA GeForce 940M (ID=0x1347)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.419 seconds
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\ChristopherJ\Desktop\NMSU\CS477\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1536x864 at 0,0
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.059 seconds
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Kathryn\Documents\GitHub\Specs\LoopRunner\LoopRunnerv1.0_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.540412 ms
+UnloadTime: 0.710321 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 536c -> priority: 1 
+  Thread -> id: 50bc -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.565631 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 3.801285 ms (FindLiveObjects: 0.022518 ms CreateObjectMapping: 0.026864 ms MarkObjects: 0.160790 ms  DeleteObjects: 3.588347 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.265484 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.877432 ms (FindLiveObjects: 0.260740 ms CreateObjectMapping: 0.065185 ms MarkObjects: 0.514370 ms  DeleteObjects: 0.035160 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.844642 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.613531 ms (FindLiveObjects: 0.062024 ms CreateObjectMapping: 0.072296 ms MarkObjects: 0.455111 ms  DeleteObjects: 0.021728 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.849778 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.716247 ms (FindLiveObjects: 0.065975 ms CreateObjectMapping: 0.090074 ms MarkObjects: 0.532148 ms  DeleteObjects: 0.026469 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.017089 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.916938 ms (FindLiveObjects: 0.240592 ms CreateObjectMapping: 0.100345 ms MarkObjects: 0.543210 ms  DeleteObjects: 0.031604 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.913778 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.768000 ms (FindLiveObjects: 0.054913 ms CreateObjectMapping: 0.083753 ms MarkObjects: 0.601679 ms  DeleteObjects: 0.026074 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.893629 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 1.102222 ms (FindLiveObjects: 0.090864 ms CreateObjectMapping: 0.140246 ms MarkObjects: 0.830815 ms  DeleteObjects: 0.038321 ms)
+
